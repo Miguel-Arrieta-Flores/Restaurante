@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <title>Lumbre y Sazon</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="img/logo.png" alt="miLogo"></div> <!-- Contenedor para el logo, facilitando modificaciones de la imagen -->
+        <div class="nav"> <!-- Encargado de la navegacion del sitio -->
+            <ul> <!-- Lista todos los elementos ancla que lleva a los usuarios a otros contenedores -->
+                <a href="index.html"> 
+                    <li>REGRESAR</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+
+    <div class="space"></div>
+
+    <div class="presentacion" id="presentacion2">
+        <div class="content">
+            <h1>COMIDAS</h1>
+        </div>
+    </div>  
+    <div class="cut"></div>
+
+    <div class="menuVentana">
+            <div class="ventana" id="view">
+                <div class="cerrar"> <a href="javascript:cerrar('view')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+                <div class="content">
+                    <h1>BIRRIA</h1>
+                    <p>Plato---------------------------------<span>$95 MXN</span></p>
+                    <br>
+                    <p>Relleno (+Carne)-------------------<span>+$10 MXN</span></p>
+                    <br>
+                    <p>Consome-----------------------------<span>$50 MXN</span></p>
+                    <br>
+                    <p>C/Queso rallado--------------------<span>+$15 MXN</span></p>
+                    <br>
+                    <p>+Tortillas----------------------------<span>+$5 MXN</span></p>
+                </div>
+            </div>
+            <div class="ventana" id="view1">
+                <div class="cerrar"> <a href="javascript:cerrar('view1')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+                <div class="content">
+                    <h1>BISTEC RANCHERO</h1>
+                    <p>Plato---------------------------------<span>$85 MXN</span></p>
+                    <br>
+                    <p>+Carne------------------------------<span>$50 MXN</span></p>
+                    <br>
+                    <p>C/Salsa extra----------------------<span>+$10 MXN</span></p>
+                    <br>
+                    <p>+Tortillas----------------------------<span>+$5 MXN</span></p>
+                </div>
+            </div>
+            <div class="ventana" id="view2">
+                <div class="cerrar"> <a href="javascript:cerrar('view2')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+                <div class="content">
+                    <h1>CHILAQUILES</h1>
+                    <p>Plato-----------------------------------<span>$70 MXN</span></p>
+                    <br>
+                    <p>C/pollo o huevo----------------------<span>+$80 MXN</span></p>
+                    <br>
+                    <p>C/crema y queso---------------------<span>+$10 MXN</span></p>
+                </div>
+            </div>
+            <div class="ventana" id="view3">
+                <div class="cerrar"> <a href="javascript:cerrar('view3')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+                <div class="content">
+                    <h1>CHILES EN NOGADA</h1>
+                    <p>Plato-----------------------------------<span>$120 MXN</span></p>
+                    <br>
+                    <p>Más relleno----------------------------<span>+$15 MXN</span></p>
+                    <br>
+                    <p>C/Salsa de nogada extra--------------<span>+$20 MXN</span></p>
+                    <br>
+                    <p>+Tortillas--------------------------------<span>+$5 MXN</span></p>
+                    <br>
+                </div>
+            </div>
+            <div class="ventana" id="view4">
+                <div class="cerrar"> <a href="javascript:cerrar('view4')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+                <div class="content">
+                    <h1>ENCHILADAS</h1>
+                    <p>Plato (verdes o mole)----------------<span>$75 MXN</span></p>
+                    <br>
+                    <p>C/Bistec o huevo----------------------<span>$85 MXN</span></p>
+                    <br>
+                    <p>C/Crema y queso extra--------------<span>+$10 MXN</span></p>
+                    <br>
+                    <p>+Tortillas------------------------------<span>+$5 MXN</span></p>
+                    <br>
+                </div>
+            </div>
+            <div class="ventana" id="view5">
+                <div class="cerrar"> <a href="javascript:cerrar('view5')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+                <div class="content">
+                    <h1>ENCHILADAS SUIZAS</h1>
+                    <p>Plato (3 enchiladas)-------------------<span>$85 MXN</span></p>
+                    <br>
+                    <p>Plato (5 enchiladas)------------------<span>$100 MXN</span></p>
+                    <br>
+                    <p>C/Pollo o bistec-----------------------<span>+$10 MXN</span></p>
+                    <br>
+                    <p>C/Queso gratinado extra------------<span>+$15 MXN</span></p>
+                </div>
+            </div>
+            <div class="ventana" id="view6">
+                <div class="cerrar"> <a href="javascript:cerrar('view6')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+                <div class="content">
+                    <h1>ENMOLADAS</h1>
+                    <p>Plato---------------------------------<span>$80 MXN</span></p>
+                    <br>
+                    <p>C/Pollo-------------------------------<span>$90 MXN</span></p>
+                    <br>
+                    <p>C/Crema y queso extra-----------<span>+$10 MXN</span></p>
+                    <br>
+                </div>
+            </div>
+            <div class="ventana" id="view7">
+                <div class="cerrar"> <a href="javascript:cerrar('view7')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+                <div class="content">
+                    <h1>ENSALADA CAMPESTRE</h1>
+                    <p>Plato pequeño-------------------------<span>$65 MXN</span></p>
+                    <br>
+                    <p>Plato grande--------------------------<span>$75 MXN</span></p>
+                    <br>
+                    <p>C/Pechuga asada o empanizada-----<span>+$10 MXN</span></p>
+                    <br>
+                    <p>C/Aderezo extra-----------------------<span>+$5 MXN</span></p>
+                    <br>
+                </div>
+            </div>
+            <div class="ventana" id="view8">
+                <div class="cerrar"> <a href="javascript:cerrar('view8')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+                <div class="content">
+                    <h1>FLAUTAS</h1>
+                    <p>Plato (3 flautas)----------------------<span>$65 MXN</span></p>
+                    <br>
+                    <p>Plato (5 flautas)----------------------<span>$85 MXN</span></p>
+                    <br>
+                    <p>C/Pollo o carne deshebrada---------<span>+$10 MXN</span></p>
+                    <br>
+                    <p>C/Crema y queso extra--------------<span>+$10 MXN</span></p>
+                    <br>
+                </div>
+            </div>
+            <div class="ventana" id="view9">
+                <div class="cerrar"> <a href="javascript:cerrar('view9')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+                <div class="content">
+                    <h1>MIXIOTES</h1>
+                    <p>Plato--------------------------------<span>$95 MXN</span></p>
+                    <br>
+                    <p>C/Más carne----------------------<span>+$15 MXN</span></p>
+                    <br>
+                    <p>C/Salsa extra----------------------<span>+$10 MXN</span></p>
+                    <br>
+                    <p>+Tortillas---------------------------<span>+$5 MXN</span></p>
+                    <br>
+                </div>
+            </div>
+            <div class="ventana" id="view10">
+                <div class="cerrar"> <a href="javascript:cerrar('view10')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+                <div class="content">
+                    <h1>MOLE POBLANO</h1>
+                    <p>Plato---------------------------------<span>$110 MXN</span></p>
+                    <br>
+                    <p>C/Más carne (pollo/guajolote)------<span>+$15 MXN</span></p>
+                    <br>
+                    <p>C/Salsa extra------------------------<span>+$10 MXN</span></p>
+                    <br>
+                    <p>+Tortillas-----------------------------<span>+$5 MXN</span></p>
+                    <br>
+                </div>
+            </div>
+            <div class="ventana" id="view11">
+                <div class="cerrar"> <a href="javascript:cerrar('view11')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+                <div class="content">
+                    <h1>PECHUGA A LA MEXICANA</h1>
+                    <p>Plato---------------------------------<span>$85 MXN</span></p>
+                    <br>
+                    <p>C/Más vegetales--------------------<span>+$10 MXN</span></p>
+                    <br>
+                    <p>C/Salsa extra-----------------------<span>+$10 MXN</span></p>
+                    <br>
+                    <p>+Tortillas----------------------------<span>+$5 MXN</span></p>
+                    <br>
+                </div>
+            </div>
+            <div class="ventana" id="view12">
+                <div class="cerrar"> <a href="javascript:cerrar('view12')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+                <div class="content">
+                    <h1>POZOLE</h1>
+                    <p>Plato pequeño-------------------------<span>$75 MXN</span></p>
+                    <br>
+                    <p>Plato mediano-------------------------<span>$90 MXN</span></p>
+                    <br>
+                    <p>Plato grande-------------------------<span>$110 MXN</span></p>
+                    <br>
+                    <p>+Más carne-------------------------<span>+$15 MXN</span></p>
+                    <br>
+                    <p>+Tostadas----------------------------<span>+$5 MXN</span></p>
+                </div>
+            </div>
+            <div class="ventana" id="view13">
+                <div class="cerrar"> <a href="javascript:cerrar('view13')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+                <div class="content">
+                    <h1>QUESADILLAS</h1>
+                    <p>Plato (2 quesadillas)--------------------<span>$55 MXN</span></p>
+                    <br>
+                    <p>Plato (4 quesadillas)--------------------<span>$100 MXN</span></p>
+                    <br>
+                    <p>C/Ingrediente extra--------------------<span>+$10 MXN</span></p>
+                    <br>
+                    <p>C/Queso extra-------------------------<span>+$10 MXN</span></p>
+                </div>
+            </div>
+            <div class="ventana" id="view14">
+                <div class="cerrar"> <a href="javascript:cerrar('view14')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+                <div class="content">
+                    <h1>TACOS</h1>
+                    <p>Tacos (cada uno)------------------------<span>$18 MXN</span></p>
+                    <br>
+                    <p>C/Salsa extra---------------------------<span>+$5 MXN</span></p>
+                    <br>
+                    <p>+Tortilla extra--------------------------<span>+$2 MXN</span></p>
+                    <br>
+                </div>
+            </div>
+            <div class="ventana" id="view15">
+                <div class="cerrar"> <a href="javascript:cerrar('view15')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+                <div class="content">
+                    <h1>TACOS DORADOS</h1>
+                    <p>Plato (3 tacos dorados)-----------------<span>$65 MXN</span></p>
+                    <br>
+                    <p>Plato (5 tacos dorados)-----------------<span>$90 MXN</span></p>
+                    <br>
+                    <p>C/Pollo o carne deshebrada------------<span>+$5 MXN</span></p>
+                    <br>
+                    <p>C/Crema y queso extra----------------<span>+$10 MXN</span></p>
+                </div>
+            </div>
+    </div>
+
+    <div class="cut"></div>
+    <div class="presentacion" id="presentacion2">
+        <div class="content">
+            <h1>BEBIDAS</h1>
+        </div>
+    </div> 
+    <div class="cut"></div>
+    
+    <div class="menuVentana">
+            <div class="ventana" id="view16">
+                <div class="cerrar"> <a href="javascript:cerrar('view16')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+                <div class="content">
+                    <h1>AGUA DE SABOR</h1>
+                    <p>Vaso (600ml)-------------------------<span>$25 MXN</span></p>
+                    <br>
+                    <p>Relleno de vaso (ilimitado)---------<span>+$10 MXN</span></p>
+                    <br>
+                    <p>Jarra (2 litros)------------------------<span>$60 MXN</span></p>
+                    <br>
+                    <p>Jarra (5 litros)-----------------------<span>$120 MXN</span></p>
+                    <br>
+                </div>
+            </div>
+            <div class="ventana" id="view17">
+                <div class="cerrar"> <a href="javascript:cerrar('view17')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+                <div class="content">
+                    <h1>CAFE</h1>
+                    <p>Taza (250ml)------------------------<span>$25 MXN</span></p>
+                    <br>
+                    <p>Relleno de taza (ilimitado)--------<span>+$10 MXN</span></p>
+                </div>
+            </div>
+            <div class="ventana" id="view18">
+                <div class="cerrar"> <a href="javascript:cerrar('view18')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+                <div class="content">
+                    <h1>CERVEZA</h1>
+                    <p>Victoria o Corona (Lata)------------<span>$35 MXN</span></p>
+                    <br>
+                    <p>Victoria o Corona (Botella)----------<span>$55 MXN</span></p>
+                </div>
+            </div>
+            <div class="ventana" id="view19">
+                <div class="cerrar"> <a href="javascript:cerrar('view19')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+                <div class="content">
+                    <h1>LIMONADA</h1>
+                    <p>Vaso (600ml)-----------------------<span>$28 MXN</span></p>
+                    <br>
+                    <p>2 Vasos (1.2L)----------------------<span>$50 MXN</span></p>
+                </div>
+            </div>
+            <div class="ventana" id="view20">
+                <div class="cerrar"> <a href="javascript:cerrar('view20')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+                <div class="content">
+                    <h1>MICHELADAS</h1>
+                    <p>Vaso (800ml)------------------------<span>$55 MXN</span></p>
+                    <br>
+                    <p>Relleno de vaso (1 vez)------------<span>+$30 MXN</span></p>
+                </div>
+            </div>
+            <div class="ventana" id="view21">
+                <div class="cerrar"> <a href="javascript:cerrar('view21')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+                <div class="content">
+                    <h1>COCTELERIA</h1>
+                    <p>Margarita (Vaso 400ml)-----------------<span>$50 MXN</span></p>
+                    <br>
+                    <p>Mojito (Vaso 400ml)---------------------<span>$55 MXN</span></p>
+                    <br>
+                    <p>Piña Colada (Vaso 400ml)---------------<span>$70 MXN</span></p>
+                    <br>
+                    <p>Negroni (Vaso 400ml)-------------------<span>$65 MXN</span></p>
+                    <br>
+                    <p>Manhattan (Vaso 400ml)----------------<span>$75 MXN</span></p>
+                    <br>
+                    <p>Especial de la casa (Vaso 450ml)-------<span>$85 MXN</span></p>
+                </div>
+            </div>
+            <div class="ventana" id="view22">
+                <div class="cerrar"> <a href="javascript:cerrar('view22')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+                <div class="content">
+                    <h1>NARANJADA</h1>
+                    <p>Vaso (600ml)-----------------------<span>$28 MXN</span></p>
+                    <br>
+                    <p>2 Vasos (1.2L)----------------------<span>$50 MXN</span></p>
+                </div>
+            </div>
+            <div class="ventana" id="view23">
+                <div class="cerrar"> <a href="javascript:cerrar('view23')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+                <div class="content">
+                    <h1>REFRESCO</h1>
+                    <p>Lata (355ml)------------------------<span>$20 MXN</span></p>
+                    <br>
+                    <p>Botella (600ml)---------------------<span>$32 MXN</span></p>
+                </div>
+            </div>    
+    </div>
+
+    
+    <footer>
+        <div class="top">
+           <div class="horario">
+            <p>Nuestro Horario
+                <br>Lunes a Domingo
+                <br>9:00 a 19:00
+            </p>
+            </div>
+            <div class="contacto">
+                <ul>
+                    <li>Correo: lumbres_y_sazon@yopmail.com</li>
+                    <li>Numero de telefono: 55585551402</li>
+                    <li>Facebook: htttps://facebook.LumbreYsazon.com</li>
+                </ul>
+            </div>
+            <div class="nav-footer">
+                <ul>
+                    <a href="index.html"> 
+                        <li>REGRESAR</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div class="datos">
+            <p>Miguel Angel Arrieta Flores</p>
+            <p>Programacion Web I 1507</p>
+        </div>
+        <div class="firma">
+            <p>©2024 DISEÑADO POR MIGUEL ARRIETA | </p> 
+        </div>
+    </footer>
+
+
+</body>
+</html>

@@ -1,18 +1,13 @@
 /*Paleta de colores
-rgb(128, 0, 0)
-rgb(152, 43, 28)
-rgb(218, 212, 181)
-rgb(242, 232, 198)
-*/
-/*
-rgb(76, 75, 22)
-rgb(137, 129, 33)
-rgb(230, 199, 103)
-rgb(248, 122, 83)
+#A66530
+#E6B737
+#E6A237
+#E66737
+#E6CC37
+#E6C084
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&display=swap');
 
 *{
     margin: 0;
@@ -21,64 +16,24 @@ rgb(248, 122, 83)
     list-style: none;
     text-decoration: none;
     color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
 }
 
 body{
     background-color: 
-    rgb(230, 199, 103);
+    rgb(0, 0, 0);
 }
 
 footer{
     width: 100%;
-    height: 200px;
+    height: 280px;
     background-color: white;
     padding-top: 30px;
     overflow: hidden;
 }
 
 header{
-    position: relative;
-    padding: 2px 5%;
-    width: 100%;
-    height: 145px;
-    display: flex;
-    justify-content: space-between;
-    background-image: url(img/background/menu.jpg);
-    background-size: 100% auto;
-    align-items: center;
-    background-color: rgb(248, 122, 83);
-    border-bottom: 2px solid rgb(252, 196, 124);
-    box-shadow: 0 2px 20px rgb(253, 124, 124);
-    z-index: 1;
-}
-
-header ul{
-    display: flex;
-    align-items: center;
-}
-
-header ul li:hover{
-    color: rgb(216, 178, 62);
-}
-
-header .nav ul li{
-    padding: 0 15px;
-    font: 20px;
-    font-size: 25px;
-    font-weight: bold;
-    -webkit-transition:all 500ms ease;
-    -o-transition: all 500ms ease;
-    transition: all 500ms ease;
-}
-
-
-header .logo img{
-    width: 350px;
-    margin-left: 40px;
-}
-
-.header2{
     position: fixed;
     padding: 2px 5%;
     width: 100%;
@@ -92,16 +47,16 @@ header .logo img{
     z-index: 1;
 }
 
-.header2 ul{
+header ul{
     display: flex;
     align-items: center;
 }
 
-.header2 ul li:hover{
-    color: rgb(216, 178, 62);
+header ul li:hover{
+    color: #7a4519;
 }
 
-.header2 .nav ul li{
+header .nav ul li{
     padding: 0 15px;
     font: 20 px;
     font-size: 20px;
@@ -112,7 +67,7 @@ header .logo img{
 }
 
 
-.header2 .logo img{
+header .logo img{
     width: 150px;
 }
 
@@ -134,17 +89,12 @@ header .logo img{
 
 .inicio .bienvenida h1{
     font-weight: bold; /* Opcional: mejora la visibilidad del gradiente */
-    background: linear-gradient(69deg, rgba(155,18,18,1) 16%, rgba(255,114,0,1) 50%, rgba(98,51,10,1) 87%);;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
     font-size: 90px;
     margin-bottom: 15px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 120px;
     font-optical-sizing: auto;
     font-style: normal;
-    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.686); /* Grosor y color del contorno */  
+    text-shadow: -4px 0px 0px rgba(222, 120, 72, 0.622), 4px 0px 0px rgba(222, 120, 72, 0.622), 0ch 4px 0px rgba(222, 120, 72, 0.622), 0px -4px 0px rgba(222, 120, 72, 0.622); 
 }
 
 .inicio .bienvenida p{
@@ -153,7 +103,7 @@ header .logo img{
     font-size: 20px;
     margin-bottom: 30px;
     font-weight: 700;
-    text-shadow: -2px 0px 10px #fff;
+    text-shadow: -2px 0px 10px #E6C084;
 }
 
 .inicio .image img{
@@ -186,7 +136,6 @@ header .logo img{
 
 .nosotros{
     position: relative;
-    top:-13px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -199,27 +148,32 @@ header .logo img{
 .nosotros .image img{
     width: 40vw;
     max-width: 600px;
+    border-radius: 50%;
 }
 
 .nosotros .content{
     max-width: 40vw;
     width: 50%;
     text-align: justify;
+    font-weight: 600;
+    text-shadow: -2px 0px 2px #fff, 2px 0px 2px #fff;
 }
 
 .nosotros .content h2{
-    font-family: cedarville cursive, cursive;
+    font-family: "Pacifico", cursive;
     font-size: 30px;
-    color: rgb(241, 147, 73);
+    color: rgb(85, 57, 36);
     text-align: left;
+    text-shadow: -2px 0px 1px #E6C084, 2px 0px 1px #E6C084, 0px -2px 1px #E6C084, 0px 2px 1px #E6C084;
 }
 
 .nosotros .content h1{
-    color: rgb(57, 33, 55);
+    color: #A66530;
     font-size: 45px;
     margin-bottom: 15px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: left;
+    text-shadow: -2px 0px 5px #000, 3px 0px 4px #000 ;
 }
 
 .nosotros.content p{
@@ -229,18 +183,39 @@ header .logo img{
     line-height: 25px;
 }
 
+#mision{
+    margin-bottom: 0px;
+}
+
 .separacion{
     width: 100%;
     height: 25px;
     position: relative;
-    top: -10px;
+    top: 0px;
     background-image: url(img/background/div1.jpg);
     background-size: 50% 150%;
 }
 
+.cut{
+    width: 100%;
+    height: 12px;
+    position: relative;
+    top: 0px;
+    background-color: black;
+}
+
+.menuVentana{
+    background-image: url(img/background/galeria.jpg);
+    background-size: 100% 100%;
+    padding: 100px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
 .ventana{
-    background-color: white;
+    background-color: #E6C084;
     width: 35%;
     font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
@@ -248,10 +223,8 @@ header .logo img{
     align-items: center;
     min-height: 250px;
     border-radius: 22px;
-    position: fixed;
-    left: 34%;
-    top: 30%;
-    display: none;
+    margin-bottom: 20px;
+
 }
 
 .ventana h1{
@@ -279,6 +252,8 @@ header .logo img{
 }
 
 .menu-box{
+    background-image: url(img/background/background2.jpg);
+    background-size: 100% 100%;
     padding: 100px 5%;
     display: flex;
     align-items: center;
@@ -289,9 +264,9 @@ header .logo img{
 .menu-card{
     min-width: 290px;
     width: 290px;
-    max-height: 400px;
+    max-height: 420px;
     padding: 40px 20px;
-    background-color: white;
+    background-color: #E6C084;
     padding-top: 0;
     border-radius: 10px;
     cursor: pointer;
@@ -319,6 +294,12 @@ header .logo img{
     display: block;
 }
 
+.menu-card h4{
+    font-weight: bolder;
+    color: #7a4519;
+    font-size: 20px;
+}
+
 .menu-card p{
     font-size: 13px;
     display: -webkit-box;
@@ -334,7 +315,7 @@ header .logo img{
     margin-bottom: 20px;
     text-align: center;
     padding-top: 5px;
-    background-color: rgba(237, 18, 18, 0.791);
+    background-color: rgb(210, 118, 65);
     color: black;
     font-weight: 700;
 }
@@ -355,7 +336,7 @@ header .logo img{
 
 .pack .image img{
     border-radius: 50%;
-    max-width: 600px;
+    width: 600px;
 }
 
 .pack .content{
@@ -401,9 +382,9 @@ header .logo img{
 .promocion-card{
     min-width: 600px;
     width: 600px;
-    max-height: 400px;
+    max-height: 420px;
     padding: 60px 20px;
-    background-color: white;
+    background-color: #E6C084;
     padding-top: 0;
     border-radius: 10px;
     cursor: pointer;
@@ -433,6 +414,9 @@ header .logo img{
 
 .promocion-card h4{
     text-align: center;
+    font-weight: bolder;
+    color: #7a4519;
+    font-size: 20px;
 }
 
 .promocion-card p{
@@ -445,12 +429,25 @@ header .logo img{
 
 .promocion-card span{
     color: rgb(150, 148, 7);
-    font-weight: 700;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.188);
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 5px;
+    background-color: rgb(210, 118, 65);
+    color: black;
+    font-weight: 700;
+}
+
+.container{
+    padding-top: 15px;
 }
 
 .container h1{
-    margin-top: 10px;
+    margin-top: 12px;
+    text-shadow: -2px 0px 10px #fff;
 }
 .container .caja{
     width: 600px;
@@ -540,20 +537,19 @@ header .logo img{
 }
 
 .miGaleria{
+    background-image: url(img/background/galeria.jpg);
+    background-size: 100% 110%;
     display: block;
     justify-content: space-around;
     align-items: center;
 }
 
-@media (max-width: 300px) {
-    .miGaleria {
-        display: block;
-    }
-}
-
 .top{
+    position: relative;
+    top: -10px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .horario{
@@ -562,43 +558,80 @@ header .logo img{
     
 }
 
+.nav-footer{
+    justify-content: center;
+    line-height: 25px;
+}
+
+.nav-footer ul li:hover{
+    color: blue;
+}
+
 .datos{
     position: relative;
-    top: 40px;
+    top: 20px;
+    background-color: #A66530;
+    position: relative;
+    top: 10px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.firma{
+    position: relative;
+    top: 10px;
     height: 80px;
     padding-top: 20px;
     text-align: center;
     box-shadow: 2px 0 5px  black;
 }
 
+.firma{
+    margin-bottom: 20px;
+}
+
+.presentacion{
+    width: 100%;
+    height: 160px;
+    padding: 25px 65px;
+    background-image: url(img/background/back_title.jpg);
+    background-size: 100% 160px;
+    text-shadow: 2px 0px 0px #E66737;
+}
+
+.presentacion h1{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.presentacion p{
+    margin: 10px;
+    font-weight: 600;
+}
+
+.space{
+    height: 60px;
+}
+
 #menuComida{
-    background-image: url(img/background/background2.jpg);
-    background-size: 100% 48%;
+    padding-top: 12px;
     text-align: center;
 }
 
-#menuComida h1{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 45px;
-    background-color: red;
-}
-
-
-#view21{
-    position: fixed;
-    top: 20%;
+#large{
+    width: 350px;
 }
 
 #cliente{
-    background-color: burlywood;
     text-align: center;
+    padding-top: 12px;
 }
 
-#cliente h1{
-    margin-top: 70px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 45px;
-    margin-bottom: 50px;
+#proms{
+    margin-bottom: 12px;
 }
 
 #individual, #familia{
@@ -606,27 +639,12 @@ header .logo img{
 }
 
 
-#galeria{
-    background-image: url(img/background/galeria.jpg);
-    background-size: 100% 110%;
+#nosotros-sec, #galeria{
+    padding: 12px;
     text-align: center;
     width: 100%;
 }
 
-#galeria h1{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 45px;
-    margin: 0 0 40px 0;
-}
-
-#galeria p{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
-    margin-bottom: 40px;
-    margin-right: 45px;
-    margin-left: 45px;
-    text-align: justify;
-}
 
 
 
