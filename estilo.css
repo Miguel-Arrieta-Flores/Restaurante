@@ -1,0 +1,635 @@
+/*Paleta de colores
+rgb(128, 0, 0)
+rgb(152, 43, 28)
+rgb(218, 212, 181)
+rgb(242, 232, 198)
+*/
+/*
+rgb(76, 75, 22)
+rgb(137, 129, 33)
+rgb(230, 199, 103)
+rgb(248, 122, 83)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: 
+    rgb(230, 199, 103);
+}
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    padding-top: 30px;
+    overflow: hidden;
+}
+
+header{
+    position: relative;
+    padding: 2px 5%;
+    width: 100%;
+    height: 145px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(img/background/menu.jpg);
+    background-size: 100% auto;
+    align-items: center;
+    background-color: rgb(248, 122, 83);
+    border-bottom: 2px solid rgb(252, 196, 124);
+    box-shadow: 0 2px 20px rgb(253, 124, 124);
+    z-index: 1;
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+}
+
+header ul li:hover{
+    color: rgb(216, 178, 62);
+}
+
+header .nav ul li{
+    padding: 0 15px;
+    font: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    -webkit-transition:all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+
+header .logo img{
+    width: 350px;
+    margin-left: 40px;
+}
+
+.header2{
+    position: fixed;
+    padding: 2px 5%;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(248, 122, 83);
+    border-bottom: 2px solid rgb(252, 196, 124);
+    box-shadow: 0 2px 20px rgb(253, 124, 124);
+    z-index: 1;
+}
+
+.header2 ul{
+    display: flex;
+    align-items: center;
+}
+
+.header2 ul li:hover{
+    color: rgb(216, 178, 62);
+}
+
+.header2 .nav ul li{
+    padding: 0 15px;
+    font: 20 px;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-transition:all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+
+.header2 .logo img{
+    width: 150px;
+}
+
+.inicio{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    background-image: url(img/background/background1.jpg);
+    background-size: 110% 100%;
+}
+
+.inicio .bienvenida{
+    padding: 5%;
+    width: 50%;
+}
+
+.inicio .bienvenida h1{
+    font-weight: bold; /* Opcional: mejora la visibilidad del gradiente */
+    background: linear-gradient(69deg, rgba(155,18,18,1) 16%, rgba(255,114,0,1) 50%, rgba(98,51,10,1) 87%);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-size: 90px;
+    margin-bottom: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.686); /* Grosor y color del contorno */  
+}
+
+.inicio .bienvenida p{
+    text-align: left;
+    color: rgb(24, 22, 24);
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-shadow: -2px 0px 10px #fff;
+}
+
+.inicio .image img{
+    width: 1000px;
+    min-width: 600px;
+}
+
+.btn{
+    background-color: orange;
+    color: black;   
+    display: inline-flex;
+    align-items: center;
+    padding: 20px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+.btn img{
+    position: relative;
+    top: 1px;
+    left: 4px;
+}
+
+.btn:hover{
+    background-color: rgb(237, 181, 75);
+    transform: translateX(20px);
+}
+
+.nosotros{
+    position: relative;
+    top:-13px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 5%;
+    background-image: url(img/background/background3.jpg);
+    background-size: 100% 100%;
+}
+
+.nosotros .image img{
+    width: 40vw;
+    max-width: 600px;
+}
+
+.nosotros .content{
+    max-width: 40vw;
+    width: 50%;
+    text-align: justify;
+}
+
+.nosotros .content h2{
+    font-family: cedarville cursive, cursive;
+    font-size: 30px;
+    color: rgb(241, 147, 73);
+    text-align: left;
+}
+
+.nosotros .content h1{
+    color: rgb(57, 33, 55);
+    font-size: 45px;
+    margin-bottom: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+}
+
+.nosotros.content p{
+    color: rgb(109, 97, 110);
+    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.separacion{
+    width: 100%;
+    height: 25px;
+    position: relative;
+    top: -10px;
+    background-image: url(img/background/div1.jpg);
+    background-size: 50% 150%;
+}
+
+
+.ventana{
+    background-color: white;
+    width: 35%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    padding: 30px;
+    align-items: center;
+    min-height: 250px;
+    border-radius: 22px;
+    position: fixed;
+    left: 34%;
+    top: 30%;
+    display: none;
+}
+
+.ventana h1{
+    margin-top: -5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.ventana p{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.ventana span{
+    color: red;
+    font-weight: 700;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.188);
+}
+
+.ventana .cerrar{
+    position: absolute;
+    right: 8px;
+    top: 5px;
+}
+
+.menu-box{
+    padding: 100px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu-card{
+    min-width: 290px;
+    width: 290px;
+    max-height: 400px;
+    padding: 40px 20px;
+    background-color: white;
+    padding-top: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    overflow: visible;
+    margin-bottom: 100px;
+    box-shadow: 0 0 50px white; 
+}
+
+.menu-card:hover img{
+    margin-top: -60px;
+}
+
+.menu-card img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
+    transition: all 0.3s;
+}
+
+.menu-card h4, .menu-card p, .menu-card span{
+    text-align:justify;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.menu-card p{
+    font-size: 13px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.menu-card span{
+    width: 115px;
+    height: 30px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 5px;
+    background-color: rgba(237, 18, 18, 0.791);
+    color: black;
+    font-weight: 700;
+}
+
+.menu-card span a:hover{
+    color: rgb(34, 12, 123);
+}
+
+.pack{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 5%;
+    background-image: url(img/background/div3.jpg);
+    background-size: 100% 100%;
+}
+
+.pack .image img{
+    border-radius: 50%;
+    max-width: 600px;
+}
+
+.pack .content{
+    width:50%;
+    position: relative;
+    top: -20px;
+    font-weight: bold;
+    text-shadow: -2px 0px 10px #fff;
+}
+
+.pack h4{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    color: rgb(190, 128, 80);
+    margin-bottom: 10px;
+    text-shadow: -2px 0px 3px #000, 2px 0px 3px #000, 0px -2px 3px #000, 0px 2px 3px #000;
+}
+
+.pack .content p{
+    color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+    font-size: 22px;
+    line-height: 25px;
+    text-align: justify;
+    
+}
+.pack .content span{
+    color: rgb(0, 0, 0);
+    margin-left: -25px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.promociones {
+    padding: 50px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: url(img/background/div1.jpg);
+}
+
+.promocion-card{
+    min-width: 600px;
+    width: 600px;
+    max-height: 400px;
+    padding: 60px 20px;
+    background-color: white;
+    padding-top: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    overflow: visible;
+    margin-bottom: 100px;
+    box-shadow: 0 0 50px black; 
+}
+
+.promocion-card:hover img{
+    transform: scale(1.2);
+}
+
+.promocion-card img{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 200px;
+    height: 200px;
+    transition: all 0.3s;
+}
+
+.promocion-card h4, .promocion-card p, .promocion-card span{
+    text-align:justify;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.promocion-card h4{
+    text-align: center;
+}
+
+.promocion-card p{
+    font-size: 13px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.promocion-card span{
+    color: rgb(150, 148, 7);
+    font-weight: 700;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.188);
+}
+
+.container h1{
+    margin-top: 10px;
+}
+.container .caja{
+    width: 600px;
+    height: 400px;
+    box-shadow: 10px 10px 20px black;
+    margin: 80px auto;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.container .fotos{
+    display: grid;
+    grid-template-columns: repeat(4,100%);
+    height: 100%;
+    width: 100%;
+}
+
+.container #foto1{
+    background-image: url(img/local/foto1.jpg);
+    background-size: 600px 400px;
+    background-position: center;
+}
+
+
+.container #foto2{
+    background-image: url(img/local/foto2.jpg);
+    background-size: 600px 400px;
+    background-position: center;
+}
+
+.container #foto3{
+    background-image: url(img/local/foto3.jpg);
+    background-size: 600px 400px;
+    background-position: center;
+}
+
+.container #foto4{
+    background-image: url(img/local/foto4.jpg);
+    background-size: 600px 400px;
+    background-position: center;
+}
+
+
+.container #evento1{
+    background-image: url(img/eventos/evento1.jpg);
+    background-size: 600px 400px;
+    background-position: center;
+}
+
+
+.container #evento2{
+    background-image: url(img/eventos/evento2.jpg);
+    background-size: 600px 400px;
+    background-position: center;
+}
+
+.container #evento3{
+    background-image: url(img/eventos/evento3.jpg);
+    background-size: 600px 400px;
+    background-position: center;
+}
+
+.container #evento4{
+    background-image: url(img/eventos/evento4.jpg);
+    background-size: 600px 400px;
+    background-position: center;
+}
+
+.button-holder{
+    position: relative;
+}
+
+.button{
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: .3rem;
+    margin-top: -30px;
+    margin-left: 5px;
+    margin-bottom: 60px;
+}
+
+.button:hover{
+    box-shadow: 0px 0px 7px 4px rgba(13, 39, 208, 0.874);
+}
+
+.miGaleria{
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (max-width: 300px) {
+    .miGaleria {
+        display: block;
+    }
+}
+
+.top{
+    display: flex;
+    justify-content: space-around;
+}
+
+.horario{
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+.datos{
+    position: relative;
+    top: 40px;
+    height: 80px;
+    padding-top: 20px;
+    text-align: center;
+    box-shadow: 2px 0 5px  black;
+}
+
+#menuComida{
+    background-image: url(img/background/background2.jpg);
+    background-size: 100% 48%;
+    text-align: center;
+}
+
+#menuComida h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 45px;
+    background-color: red;
+}
+
+
+#view21{
+    position: fixed;
+    top: 20%;
+}
+
+#cliente{
+    background-color: burlywood;
+    text-align: center;
+}
+
+#cliente h1{
+    margin-top: 70px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+#individual, #familia{
+    background-image: url(img/background/div3-r.jpg);
+}
+
+
+#galeria{
+    background-image: url(img/background/galeria.jpg);
+    background-size: 100% 110%;
+    text-align: center;
+    width: 100%;
+}
+
+#galeria h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 45px;
+    margin: 0 0 40px 0;
+}
+
+#galeria p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    margin-bottom: 40px;
+    margin-right: 45px;
+    margin-left: 45px;
+    text-align: justify;
+}
+
+
+
+
+
+

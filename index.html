@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <title>Restaurante</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="img/logo.png" alt="miLogo"></div>
+        <div class="nav">
+            <ul>
+                <a href="#menuPrincipal"> 
+                    <li>INICIO</li>
+                </a>
+                <a href="#comida"> 
+                    <li>MENU</li>
+                </a>
+                <a href="#packs"> 
+                    <li>PAQUETES</li>
+                </a>
+                <a href="#proms"> 
+                    <li>PROMOCIONES</li>
+                </a>
+                <a href="#sobreNosotros"> 
+                    <li> SOBRE NOSOTROS</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+
+    <div id="menuPrincipal">
+        <div class="inicio">
+            <div class="bienvenida">
+                <h1>BIENVENIDO A LUMBRE Y SAZON</h1>
+                <p>Aquí los espera el auténtico sabor de México en un ambiente cálido y acogedor. Descubre nuestros platillos y siéntete como en casa. </p>
+                <a href="#cliente" class="btn"> PARA USTED <img src="img/flecha.png" alt="" width="30"></a>
+            </div>
+            <div class="image">
+                <img src="img/background/menuPrincipal.png" alt="imagen">
+            </div>
+        </div> 
+        <div class="separacion" id="sobreNosotros">
+        </div>
+        <div class="nosotros">
+            <div class="image">
+                <img src="img/local/foto1.jpg" alt="imagen" width="500">
+             </div>
+            <div class="content">
+                <h2>SOBRE NOSOTROS</h2>
+                <h1>Una experiencia culinaria única</h1>
+                <p> <b>Lumbre y Sazon</b> es un restaurante mexicano que celebra la riqueza culinaria de México, ofreciendo platillos auténticos que resaltan los sabores tradicionales con un toque moderno. Nuestro objetivo es llevar a cada comensal una experiencia de sabor y tradición, en un ambiente acogedor que invita a disfrutar la esencia de la comida mexicana.</p>
+            </div>
+        </div>
+        <div class="nosotros" id="mision">
+            <div class="content">
+                <h2>SOBRE NOSOTROS</h2>
+                <h1>Nuestro objetivo es que disfrute su comida</h1>
+                <p> En Lumbre y Sazón, nos esforzamos por satisfacer a nuestros clientes con platillos cuidadosamente preparados con ingredientes frescos y de alta calidad, garantizando que cada bocado sea una experiencia memorable. Además de ofrecer porciones generosas y un servicio cálido y atento, creando un lugar donde todos se sientan bienvenidos, con una excelente relación calidad-precio, haciendo que todos puedan deleitarse con los platillos más representativos de nuestro país.</p>
+            </div>
+            <div class="image">
+                <img src="img/local/foto1.jpg" alt="imagen" width="500">
+             </div>
+        </div>
+
+    </div>
+    
+    <div id="menuComida">
+        <div class="separacion" id="comida">
+        </div>
+        <div class="presentacion">
+            <h1>NUESTRO MENU DE COMIDA</h1>
+            <p>Descubre una variedad de platillos mexicanos auténticos, preparados con ingredientes frescos y llenos de tradición. ¡Explora los sabores únicos de nuestra cocina!</p>
+        </div>        
+            <div class="menu-box">
+                <div class="menu-card" id="birria">
+                    <img src="img/comida/birria.jpg" alt="miBirria" width="200" height="200">
+                    <h4>Birria</h4>
+                    <p>Estofado de carne (res o chivo) cocido en salsa de chiles y especias, comúnmente acompañado de tortillas.</p>   
+                    <span>
+                        <a href="javascript:abrir('view')"> Ver precios</a>
+                    </span> 
+                </div>
+
+                <div class="menu-card" id="bistec">
+                    <img src="img/comida/bistec_ranchero.jpg" alt="miBistec"
+                        width="200" height="200">
+                    <h4>Bistec ranchero</h4>
+                    <p>Filete de res cocinado con jitomate, cebolla y chile, acompañado de arroz y frijoles.
+                    </p>
+                    <span>
+                        <a href="javascript:abrir('view1')"> Ver precios</a>
+                    </span>
+                </div>
+
+                <div class="menu-card" id="chilaquiles">
+                    <img src="img/comida/chilaquiles.jpg" alt="miChilaquiles" width="200" height="200">
+                    <h4>Chilaquiles</h4>
+                    <p>Totopos bañados en salsa roja o verde, servidos con pollo o huevo y decorados con queso y crema.</p>
+                    <span>
+                        <a href="javascript:abrir('view2')"> Ver precios</a>
+                    </span> 
+                </div>
+
+                <div class="menu-card" id="chiles-nogada">
+                    <img src="img/comida/chile.jpg" alt="miChiles" width="200" height="200">
+                   <h4>Chiles en nogada</h4>
+                   <p>Chile poblano relleno de carne y frutas, bañado en salsa de nuez y granada, un plato típico de Puebla.</p>
+                   <span>
+                    <a href="javascript:abrir('view3')"> Ver precios</a>
+                    </span> 
+               </div>
+
+               <div class="menu-card" id="enchiladas">
+                    <img src="img/comida/enchiladas.jpg" alt="miEnchiladas" width="200" height="200">
+                    <h4>Enchiladas</h4>
+                    <p>Tortillas rellenas (pollo, bistec o huevo), bañadas en salsa verde o de mole, acompañadas de queso y crema.</p>
+                    <span>
+                        <a href="javascript:abrir('view4')"> Ver precios</a>
+                    </span> 
+                </div>
+
+                <div class="menu-card" id="enchiladas-suizas">
+                    <img src="img/comida/enchiladas_suizas.jfif" alt="miSuizas" width="200" height="200">
+                    <h4>Enchiladas suizas</h4>
+                    <p>Enchiladas bañadas en salsa de tomatillo y crema, gratinadas con queso.</p>
+                    <span>
+                        <a href="javascript:abrir('view5')"> Ver precios</a>
+                    </span> 
+                </div>
+
+                <div class="menu-card" id="enmoladas">
+                    <img src="img/comida/enmoladas.jpg" alt="miEnmoladas" width="200" height="200">
+                    <h4>Enmoladas</h4>
+                    <p>Tortillas rellenas y bañadas en mole, generalmente servidas con pollo desmenuzado o queso.</p>
+                    <span>
+                        <a href="javascript:abrir('view6')"> Ver precios</a>
+                    </span> 
+                </div>
+
+                <div class="menu-card" id="ensalada-campestre">
+                    <img src="img/comida/ensalada.png" alt="miEnsalada" width="200" height="200">
+                    <h4>Ensalada campestre</h4>
+                    <p>Mezcla de vegetales frescos con pechuga de pollo, puede ser asada o empanizada</p>
+                    <span>
+                        <a href="javascript:abrir('view7')"> Ver precios</a>
+                    </span> 
+                </div>
+
+                <div class="menu-card" id="flautas">
+                    <img src="img/comida/flautas.jpeg" alt="miFlautas" width="200" height="200">
+                    <h4>Flautas</h4>
+                    <p>Tortillas rellenas de pollo, papa o carne, enrolladas y fritas, servidas con crema, lechuga y queso.</p>
+                    <span>
+                        <a href="javascript:abrir('view8')"> Ver precios</a>
+                    </span> 
+                </div>
+
+                <div class="menu-card" id="mixiotes">
+                    <img src="img/comida/mixiotes.jpg" alt="miMixiotes" width="200" height="200">
+                    <h4>Mixiotes</h4>
+                    <p>Carne de cordero o pollo adobada y cocida en hoja de maguey, con especias tradicionales</p>
+                    <span>
+                        <a href="javascript:abrir('view9')"> Ver precios</a>
+                    </span> 
+                </div>
+
+                <div class="menu-card" id="mole-poblano">
+                    <img src="img/comida/mole_poblano.jpg" alt="miMole" width="200" height="200">
+                    <h4>Mole poblano</h4>
+                    <p>Salsa espesa y oscura de chiles, chocolate y especias, servida con pollo o guajolote.</p>
+                    <span>
+                        <a href="javascript:abrir('view10')"> Ver precios</a>
+                    </span> 
+                </div>
+
+                <div class="menu-card" id="pechuga-mexicana">
+                    <img src="img/comida/pechuga.jfif" alt="miPechuga" width="200" height="200">
+                    <h4>Pechuga de pollo a la mexicana</h4>
+                    <p>Pechuga salteada con jitomate, cebolla y chile, servida con arroz y frijoles.</p>
+                    <span>
+                        <a href="javascript:abrir('view11')"> Ver precios</a>
+                    </span> 
+                </div>
+
+                <div class="menu-card" id="pozole">
+                    <img src="img/comida/pozole.jpg" alt="miPozole" width="200" height="200"> 
+                    <h4>Pozole</h4>
+                    <p>Caldo espeso de maíz cacahuazintle con carne (maciza, pollo o surtido), puede ser rojo, blanco o verde.</p>
+                    <span>
+                        <a href="javascript:abrir('view12')"> Ver precios</a>
+                    </span> 
+                </div>
+
+                <div class="menu-card" id="quesadillas">
+                    <img src="img/comida/quesadillas.jfif" alt="miQuesadillas" width="200" height="200">
+                    <h4>Quesadillas</h4>
+                    <p>Tortillas rellenas de queso y otros ingredientes como flor de calabaza, huitlacoche o champiñones.</p>
+                    <span>
+                        <a href="javascript:abrir('view13')"> Ver precios</a>
+                    </span> 
+                </div>
+
+                <div class="menu-card" id="tacos">
+                    <img src="img/comida/tacos.jpg" alt="miTacos" width="200" height="200">
+                    <h4>Tacos</h4>
+                    <p>Tortillas rellenas de carne asada (bistec, suadero o longaniza), servidos con cilantro, cebolla, limón y salsa al gusto.</p>
+                    <span>
+                        <a href="javascript:abrir('view14')"> Ver precios</a>
+                    </span> 
+                </div>
+
+                <div class="menu-card" id="tacos-dorados">
+                    <img src="img/comida/tacos_dorados.jpg" alt="miDorados" width="200" height="200">
+                    <h4>Tacos dorados</h4>
+                    <p>Tacos rellenos de pollo, papa o carne, fritos hasta quedar crujientes y servidos con lechuga y crema.</p>
+                    <span>
+                        <a href="javascript:abrir('view15')"> Ver precios</a>
+                    </span> 
+                </div>
+
+            </div>
+
+        <h1>NUESTRO MENU DE BEBIDAS</h1>
+            <div class="bebidas">
+                <div class="menu-box">
+                    <div class="menu-card" id="agua">    
+                        <img src="img/bebidas/agua.jfif" alt="miDorados" width="200" height="200">
+                        <h4>Agua de sabor</h4>
+                        <p>Bebidas frescas de jamaica, horchata o tamarindo, perfectas para acompañar cualquier platillo.</p>
+                        <span>
+                            <a href="javascript:abrir('view16')"> Ver precios</a>
+                        </span> 
+                    </div>
+
+                    <div class="menu-card" id="cafe">
+                        <img src="img/bebidas/cafe.JPG" alt="cafe" width="200" height="200">
+                        <h4>Cafe</h4>
+                        <p>Café tradicional mexicano endulzado con piloncillo y canela.</p>
+                        <span>
+                            <a href="javascript:abrir('view17')"> Ver precios</a>
+                        </span> 
+                    </div>
+
+                    <div class="menu-card" id="cerveza">
+                        <img src="img/bebidas/cerveza.jpg" alt="cerveza" width="200" height="200">
+                        <h4>Cerveza</h4>
+                        <p>Cerveza fría en presentación de botella para disfrutar con los platillos.</p>
+                        <span>
+                            <a href="javascript:abrir('view18')"> Ver precios</a>
+                        </span> 
+                    </div>
+
+                    <div class="menu-card" id="limonada">
+                        <img src="img/bebidas/limonada.jpeg" alt="limonada" width="200" height="200">
+                        <h4>Limonada</h4>
+                        <p> Refrescante mezcla de limón natural y agua mineral con un toque de azúcar.</p>
+                        <span>
+                            <a href="javascript:abrir('view19')"> Ver precios</a>
+                        </span> 
+                    </div>
+                    
+                    <div class="menu-card" id="micheladas">
+                        <img src="img/bebidas/michelada.jpg" alt="miDorados" width="200" height="200">
+                        <h4>Micheladas</h4>
+                        <p>Cerveza preparada con limón, sal y salsas picantes, servida en tarro escarchado.</p>
+                        <span>
+                            <a href="javascript:abrir('view20')"> Ver precios</a>
+                        </span> 
+                    </div>
+
+                    <div class="menu-card" id="cocteleria">
+                        <img src="img/bebidas/limonada.jpeg" alt="cocteleria" width="200" height="200">
+                        <h4>Cocteleria</h4>
+                        <p>Una refrescante selección de cócteles, lleno de ingredientes frescos y sabores autenticos, perfectos para acompañar cualquier platillo.</p>
+                        <span>
+                            <a href="javascript:abrir('view21')"> Ver precios</a>
+                        </span> 
+                    </div>
+
+                    <div class="menu-card" id="naranjada">
+                        <img src="img/bebidas/naranjada.jfif" alt="miDorados" width="200" height="200">
+                        <h4>Naranjada</h4>
+                        <p>Bebida de jugo de naranja con agua mineral, ideal para refrescarse.</p>
+                        <span>
+                            <a href="javascript:abrir('view22')"> Ver precios</a>
+                        </span> 
+                    </div>
+
+                    <div class="menu-card" id="refresco">
+                        <img src="img/bebidas/refresco.jpg" alt="miDorados" width="200" height="200">
+                        <h4>Refresco</h4>
+                        <p>Refrescos embotellados en diferentes sabores clásicos.</p>
+                        <span>
+                            <a href="javascript:abrir('view23')"> Ver precios</a>
+                        </span> 
+                    </div>
+
+                </div>
+            </div>
+            
+
+        <h1>NUESTRO MENU DE POSTRES</h1>
+            <div class="postres">
+                <div class="menu-box">
+                    <div class="menu-card" id="arroz">
+                        <img src="img/postres/arroz.jfif" alt="arroz" width="200" height="200">
+                        <h4>Arroz con leche</h4>
+                        <p>Arroz cocido en leche con canela y azúcar, servido frío o caliente.</p>
+                        <span>$30 MXN</span>
+                    </div>
+
+                    <div class="menu-card" id="banana">
+                        <img src="img/postres/banana.jpg" alt="banana" width="200" height="200">
+                        <h4>Banana split</h4>
+                        <p>Plátano con bolas de helado, crema batida, chocolate y cereza. </p>
+                        <span>$55 MXN</span>
+                    </div>
+
+                    <div class="menu-card" id="flan-napolitano">
+                        <img src="img/postres/flan.jfif" alt="flan" width="200" height="200">
+                        <h4>Flan napolitano</h4>
+                        <p>Suave flan de huevo y leche, con caramelo en la parte superior.</p>
+                        <span>$35 MXN</span>
+                    </div>
+
+                    <div class="menu-card" id="gelatina">
+                        <img src="img/postres/gelatina.jpg" alt="gelatina" width="200" height="200">
+                        <h4>Gelatina</h4>
+                        <p>Postre gelatinoso de sabores como fresa, limón o uva.</p>
+                        <span>$20 MXN</span>
+                    </div>
+
+                    <div class="menu-card" id="helado">
+                        <img src="img/postres/helado.jpg" alt="helado" width="200" height="200">
+                        <h4>Helado</h4>
+                        <p>Bolas de helado de distintos sabores, como chocolate, vainilla y fresa. </p>
+                        <span>$25 MXN</span>
+                    </div>
+
+                    <div class="menu-card" id="helado-frito">
+                        <img src="img/postres/helado_frito.jpg" alt="frito" width="200" height="200">
+                        <h4>Helado frito</h4>
+                        <p>Helado empanizado y frito, crujiente por fuera y frío por dentro.</p>
+                        <span>$40 MXN</span>
+                    </div>
+
+                    <div class="menu-card" id="pastel">
+                        <img src="img/postres/pastel.jfif" alt="miDorados" width="200" height="200">
+                        <h4>Pastel</h4>
+                        <p>Pastel esponjoso empapado en leche condensada, evaporada y crema.</p>
+                        <span>$45 MXN</span>
+                    </div>
+
+                    <div class="menu-card" id="tamal">
+                        <img src="img/postres/tamal.jfif" alt="miDorados" width="200" height="200">
+                        <h4>Tamal</h4>
+                        <p>Tamal esponjoso de masa dulce o chocolate, cocido en hoja de maíz. </p>
+                        <span>$20 MXN</span>
+                    </div>
+
+                </div>
+            </div>
+    </div>
+
+    <div id="cliente">
+        <div class="separacion" id="packs">
+        </div>
+        <h1>PAQUETES</h1>
+            <div class="paquetes">
+                <div class="pack" id="desayuno">
+                    <div class="image">
+                        <img src="img/paquetes/deayuno.jpg" alt="desayuno" width="500">
+                    </div>
+                    <div class="content">
+                        <h4>DESAYUNO</h4>
+                        <p>Descripción: Ideal para iniciar el día con un sabor auténtico, incluye chilaquiles (rojos o verdes) con pollo o huevo, acompañados de frijoles, un café de olla y un pan dulce.</p>
+                        <span>Precio: $90 MXN</span>
+                    </div>
+                </div>
+
+                <div class="pack" id="individual">
+                    <div class="content">
+                        <h4>INDIVIDUAL</h4>
+                        <p>Descripción: Un menú completo para una persona, con una opción de tacos (bistec, suadero o longaniza), arroz, frijoles y una bebida (agua de sabor o refresco).</p>
+                        <span>Precio: $120 MXN</span>
+                    </div>
+                    <div class="image">
+                        <img src="img/paquetes/individual.jpg" alt="individual" width="500">
+                    </div>
+                </div>
+
+                <div class="pack"  id="pareja">
+                    <div class="image">
+                        <img src="img/paquetes/pareja.jpg" alt="pareja" width="500" >
+                    </div>
+                    <div class="content">
+                        <h4>PAREJA</h4>
+                        <p>Descripción: Perfecto para compartir, incluye dos platos fuertes a elegir entre enchiladas, birria o mole poblano, acompañados de arroz, frijoles, dos aguas de sabor y un postre (flan o arroz con leche).</p>
+                        <span>Precio: $250 MXN</span>
+                    </div>
+                </div>
+
+                <div class="pack" id="familia">
+                    <div class="content">
+                        <h4>FAMILIAR</h4>
+                        <p>Descripción: Para disfrutar en grupo, incluye mixiotes, tacos dorados y flautas, acompañados de guarniciones de arroz, frijoles, tortillas, una jarra de agua de sabor y un postre para compartir (pastel de tres leches).</p>
+                        <span>Precio: $450 MXN</span>
+                    </div>
+                    <div class="image">
+                        <img src="img/paquetes/familia.jpg" alt="familia" width="500">
+                    </div>
+                </div>
+
+            </div>
+        <div class="separacion" id="proms">
+        </div>
+        <h1>PROMOCIONES</h1>
+            <div class="promociones">
+                <div class="promocion-card">
+                    <div class="image">
+                        <img src="img/promociones/dayuno.jfif" alt="desayuno" width="300">
+                    </div>
+                    <div class="content">
+                        <h4>DESAYUNO A PRECIO ESPECIAL</h4>
+                        <p>Inicia la semana con un buen desayuno: todos los lunes, cualquier plato del Paquete Desayuno tiene un 15% de descuento. Perfecto para empezar el día con energía y buen sabor.</p>
+                        <span>Solo Lunes</span>
+                    </div>
+                </div>
+                
+                <div class="promocion-card">
+                    <div class="image">
+                        <img src="img/promociones/tacos.jfif" alt="desayuno" width="300">
+                    </div>
+                    <div class="content">
+                        <h4>TACOS A 2X1</h4>
+                        <p>Todos los martes, disfruta de 2x1 en tacos de bistec, suadero y longaniza, para que puedas probar más sabores o compartir con amigos.</p>
+                        <span>Solo Martes</span>
+                     </div>
+                </div>
+
+                <div class="promocion-card">
+                    <div class="image">
+                        <img src="img/promociones/postre.jfif" alt="desayuno" width="300">
+                    </div>
+                    <div class="content">
+                        <h4>POSTRE GRATIS</h4>
+                        <p>Todos los miércoles, al ordenar cualquier plato fuerte, recibe un postre gratis (flan, arroz con leche o gelatina) para cerrar la comida con un toque dulce.</p>
+                        <span>Solo Miercoles antes de las 4:00pm</span>
+                    </div>
+                </div>
+                
+                <div class="promocion-card">
+                    <div class="image">
+                        <img src="img/promociones/enchiladas.jfif" alt="desayuno" width="300">
+                    </div>
+                    <div class="content">
+                        <h4>ENCHILADAS (40% DE DESCUENTO)</h4>
+                        <p>Todos los jueves, nuestras enchiladas (verdes, de mole o suizas) están al 40% de descuento. Una excelente oportunidad para disfrutar este clásico mexicano.</p>
+                        <span>Solo Jueves</span>
+                     </div>
+                </div>
+
+                <div class="promocion-card">
+                    <div class="image">
+                        <img src="img/promociones/micheladas.jfif" alt="desayuno" width="300">
+                    </div>
+                    <div class="content">
+                        <h4>HAPPY HOUR (2X1 MICHELADAS)</h4>
+                        <p>Unicamente para todos los jueves y viernes, las micheladas al 2x1, para empezar el fin de semana con buen sabor y un toque refrescante.</p>
+                        <span>Solo Jueves y Viernes de 5:00pm a 7:00pm</span>
+                    </div>
+                </div>
+                
+                <div class="promocion-card">
+                    <div class="image">
+                        <img src="img/promociones/dayuno.jfif" alt="desayuno" width="300">
+                    </div>
+                    <div class="content">
+                        <h4>DOMINGO FAMILIAR</h4>
+                        <p>Para la familia, tenemos esta promocion para todos los domingo: el Paquete Familiar al 25% de descuento, ideal para compartir en familia y probar una variedad de platillos tradicionales.</p>
+                        <span>Solo Domingos</span>
+                     </div>
+                </div>
+                
+            </div>
+    </div>
+
+    <div id="galeria">
+        <div class="separacion" id="gal">
+        </div>
+        <h1>GALERIA</h1>
+        <div class="miGaleria">
+            <div class="container">
+                <h1>NUESTRO LOCAL</h1>
+                <div class="caja">
+                    <div class="fotos">
+                        <div id="foto1">
+                        </div>
+                        <div id="foto2">
+                        </div>
+                        <div id="foto3">
+                        </div>
+                        <div id="foto4">
+                        </div>
+                    </div>  
+                </div>
+                <div class="button-holder">
+                    <a href="#foto1" class="button"></a>
+                    <a href="#foto2" class="button"></a>
+                    <a href="#foto3" class="button"></a>
+                    <a href="#foto4" class="button"></a>
+                </div>
+            </div>
+            <div class="container">
+                <h1>EVENTOS</h1>
+                <div class="caja">
+                    <div class="fotos">
+                        <div id="evento1">
+                        </div>
+                        <div id="evento2">
+                        </div>
+                        <div id="evento3">
+                        </div>
+                        <div id="evento4">
+                        </div>
+                    </div>  
+                </div>
+                <div class="button-holder">
+                    <a href="#evento1" class="button"></a>
+                    <a href="#evento2" class="button"></a>
+                    <a href="#evento3" class="button"></a>
+                    <a href="#evento4" class="button"></a>
+                </div>
+            </div>
+        </div>
+        
+            
+    </div>
+
+    <div class="misVentanas">
+        <div class="ventana" id="view">
+            <div class="cerrar"> <a href="javascript:cerrar('view')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+            <div class="content">
+                <h1>PRECIOS</h1>
+                <p>Plato---------------------------------<span>$95 MXN</span></p>
+                <br>
+                <p>Relleno (+Carne)-------------------<span>+$10 MXN</span></p>
+                <br>
+                <p>Consome-----------------------------<span>$50 MXN</span></p>
+                <br>
+                <p>C/Queso rallado--------------------<span>+$15 MXN</span></p>
+                <br>
+                <p>+Tortillas----------------------------<span>+$5 MXN</span></p>
+            </div>
+        </div>
+        <div class="ventana" id="view1">
+            <div class="cerrar"> <a href="javascript:cerrar('view1')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+            <div class="content">
+                <h1>PRECIOS</h1>
+                <p>Plato---------------------------------<span>$85 MXN</span></p>
+                <br>
+                <p>+Carne------------------------------<span>$50 MXN</span></p>
+                <br>
+                <p>C/Salsa extra----------------------<span>+$10 MXN</span></p>
+                <br>
+                <p>+Tortillas----------------------------<span>+$5 MXN</span></p>
+            </div>
+        </div>
+        <div class="ventana" id="view2">
+            <div class="cerrar"> <a href="javascript:cerrar('view2')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+            <div class="content">
+                <h1>PRECIOS</h1>
+                <p>Plato-----------------------------------<span>$70 MXN</span></p>
+                <br>
+                <p>C/pollo o huevo----------------------<span>+$80 MXN</span></p>
+                <br>
+                <p>C/crema y queso---------------------<span>+$10 MXN</span></p>
+            </div>
+        </div>
+        <div class="ventana" id="view3">
+            <div class="cerrar"> <a href="javascript:cerrar('view3')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+            <div class="content">
+                <h1>PRECIOS</h1>
+                <p>Plato-----------------------------------<span>$120 MXN</span></p>
+                <br>
+                <p>Más relleno----------------------------<span>+$15 MXN</span></p>
+                <br>
+                <p>C/Salsa de nogada extra--------------<span>+$20 MXN</span></p>
+                <br>
+                <p>+Tortillas--------------------------------<span>+$5 MXN</span></p>
+                <br>
+            </div>
+        </div>
+        <div class="ventana" id="view4">
+            <div class="cerrar"> <a href="javascript:cerrar('view4')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+            <div class="content">
+                <h1>PRECIOS</h1>
+                <p>Plato (verdes o mole)----------------<span>$75 MXN</span></p>
+                <br>
+                <p>C/Bistec o huevo----------------------<span>$85 MXN</span></p>
+                <br>
+                <p>C/Crema y queso extra--------------<span>+$10 MXN</span></p>
+                <br>
+                <p>+Tortillas------------------------------<span>+$5 MXN</span></p>
+                <br>
+            </div>
+        </div>
+        <div class="ventana" id="view5">
+            <div class="cerrar"> <a href="javascript:cerrar('view5')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+            <div class="content">
+                <h1>PRECIOS</h1>
+                <p>Plato (3 enchiladas)-------------------<span>$85 MXN</span></p>
+                <br>
+                <p>Plato (5 enchiladas)------------------<span>$100 MXN</span></p>
+                <br>
+                <p>C/Pollo o bistec-----------------------<span>+$10 MXN</span></p>
+                <br>
+                <p>C/Queso gratinado extra------------<span>+$15 MXN</span></p>
+            </div>
+        </div>
+        <div class="ventana" id="view6">
+            <div class="cerrar"> <a href="javascript:cerrar('view6')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+            <div class="content">
+                <h1>PRECIOS</h1>
+                <p>Plato---------------------------------<span>$80 MXN</span></p>
+                <br>
+                <p>C/Pollo-------------------------------<span>$90 MXN</span></p>
+                <br>
+                <p>C/Crema y queso extra-----------<span>+$10 MXN</span></p>
+                <br>
+            </div>
+        </div>
+        <div class="ventana" id="view7">
+            <div class="cerrar"> <a href="javascript:cerrar('view7')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+            <div class="content">
+                <h1>PRECIOS</h1>
+                <p>Plato pequeño-------------------------<span>$65 MXN</span></p>
+                <br>
+                <p>Plato grande--------------------------<span>$75 MXN</span></p>
+                <br>
+                <p>C/Pechuga asada o empanizada-----<span>+$10 MXN</span></p>
+                <br>
+                <p>C/Aderezo extra-----------------------<span>+$5 MXN</span></p>
+                <br>
+            </div>
+        </div>
+        <div class="ventana" id="view8">
+            <div class="cerrar"> <a href="javascript:cerrar('view8')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+            <div class="content">
+                <h1>PRECIOS</h1>
+                <p>Plato (3 flautas)----------------------<span>$65 MXN</span></p>
+                <br>
+                <p>Plato (5 flautas)----------------------<span>$85 MXN</span></p>
+                <br>
+                <p>C/Pollo o carne deshebrada---------<span>+$10 MXN</span></p>
+                <br>
+                <p>C/Crema y queso extra--------------<span>+$10 MXN</span></p>
+                <br>
+            </div>
+        </div>
+        <div class="ventana" id="view9">
+            <div class="cerrar"> <a href="javascript:cerrar('view9')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+            <div class="content">
+                <h1>PRECIOS</h1>
+                <p>Plato--------------------------------<span>$95 MXN</span></p>
+                <br>
+                <p>C/Más carne----------------------<span>+$15 MXN</span></p>
+                <br>
+                <p>C/Salsa extra----------------------<span>+$10 MXN</span></p>
+                <br>
+                <p>+Tortillas---------------------------<span>+$5 MXN</span></p>
+                <br>
+            </div>
+        </div>
+        <div class="ventana" id="view10">
+            <div class="cerrar"> <a href="javascript:cerrar('view10')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+            <div class="content">
+                <h1>PRECIOS</h1>
+                <p>Plato---------------------------------<span>$110 MXN</span></p>
+                <br>
+                <p>C/Más carne (pollo/guajolote)------<span>+$15 MXN</span></p>
+                <br>
+                <p>C/Salsa extra------------------------<span>+$10 MXN</span></p>
+                <br>
+                <p>+Tortillas-----------------------------<span>+$5 MXN</span></p>
+                <br>
+            </div>
+        </div>
+        <div class="ventana" id="view11">
+            <div class="cerrar"> <a href="javascript:cerrar('view11')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+            <div class="content">
+                <h1>PRECIOS</h1>
+                <p>Plato---------------------------------<span>$85 MXN</span></p>
+                <br>
+                <p>C/Más vegetales--------------------<span>+$10 MXN</span></p>
+                <br>
+                <p>C/Salsa extra-----------------------<span>+$10 MXN</span></p>
+                <br>
+                <p>+Tortillas----------------------------<span>+$5 MXN</span></p>
+                <br>
+            </div>
+        </div>
+        <div class="ventana" id="view12">
+            <div class="cerrar"> <a href="javascript:cerrar('view12')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+            <div class="content">
+                <h1>PRECIOS</h1>
+                <p>Plato pequeño-------------------------<span>$75 MXN</span></p>
+                <br>
+                <p>Plato mediano-------------------------<span>$90 MXN</span></p>
+                <br>
+                <p>Plato grande-------------------------<span>$110 MXN</span></p>
+                <br>
+                <p>+Más carne-------------------------<span>+$15 MXN</span></p>
+                <br>
+                <p>+Tostadas----------------------------<span>+$5 MXN</span></p>
+            </div>
+        </div>
+        <div class="ventana" id="view13">
+            <div class="cerrar"> <a href="javascript:cerrar('view13')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+            <div class="content">
+                <h1>PRECIOS</h1>
+                <p>Plato (2 quesadillas)--------------------<span>$55 MXN</span></p>
+                <br>
+                <p>Plato (4 quesadillas)--------------------<span>$100 MXN</span></p>
+                <br>
+                <p>C/Ingrediente extra--------------------<span>+$10 MXN</span></p>
+                <br>
+                <p>C/Queso extra-------------------------<span>+$10 MXN</span></p>
+            </div>
+        </div>
+        <div class="ventana" id="view14">
+            <div class="cerrar"> <a href="javascript:cerrar('view14')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+            <div class="content">
+                <h1>PRECIOS</h1>
+                <p>Tacos (cada uno)------------------------<span>$18 MXN</span></p>
+                <br>
+                <p>C/Salsa extra---------------------------<span>+$5 MXN</span></p>
+                <br>
+                <p>+Tortilla extra--------------------------<span>+$2 MXN</span></p>
+                <br>
+            </div>
+        </div>
+        <div class="ventana" id="view15">
+            <div class="cerrar"> <a href="javascript:cerrar('view15')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+            <div class="content">
+                <h1>PRECIOS</h1>
+                <p>Plato (3 tacos dorados)-----------------<span>$65 MXN</span></p>
+                <br>
+                <p>Plato (5 tacos dorados)-----------------<span>$90 MXN</span></p>
+                <br>
+                <p>C/Pollo o carne deshebrada------------<span>+$5 MXN</span></p>
+                <br>
+                <p>C/Crema y queso extra----------------<span>+$10 MXN</span></p>
+            </div>
+        </div>
+
+        
+        <div class="ventana" id="view16">
+            <div class="cerrar"> <a href="javascript:cerrar('view16')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+            <div class="content">
+                <h1>PRECIOS</h1>
+                <p>Vaso (600ml)-------------------------<span>$25 MXN</span></p>
+                <br>
+                <p>Relleno de vaso (ilimitado)---------<span>+$10 MXN</span></p>
+                <br>
+                <p>Jarra (2 litros)------------------------<span>$60 MXN</span></p>
+                <br>
+                <p>Jarra (5 litros)-----------------------<span>$120 MXN</span></p>
+                <br>
+            </div>
+        </div>
+        <div class="ventana" id="view17">
+            <div class="cerrar"> <a href="javascript:cerrar('view17')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+            <div class="content">
+                <h1>PRECIOS</h1>
+                <p>Taza (250ml)------------------------<span>$25 MXN</span></p>
+                <br>
+                <p>Relleno de taza (ilimitado)--------<span>+$10 MXN</span></p>
+            </div>
+        </div>
+        <div class="ventana" id="view18">
+            <div class="cerrar"> <a href="javascript:cerrar('view18')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+            <div class="content">
+                <h1>PRECIOS</h1>
+                <p>Victoria o Corona (Lata)------------<span>$35 MXN</span></p>
+                <br>
+                <p>Victoria o Corona (Botella)----------<span>$35 MXN</span></p>
+            </div>
+        </div>
+        <div class="ventana" id="view19">
+            <div class="cerrar"> <a href="javascript:cerrar('view19')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+            <div class="content">
+                <h1>PRECIOS</h1>
+                <p>Vaso (600ml)-----------------------<span>$28 MXN</span></p>
+                <br>
+                <p>2 Vasos (1.2L)----------------------<span>$50 MXN</span></p>
+            </div>
+        </div>
+        <div class="ventana" id="view20">
+            <div class="cerrar"> <a href="javascript:cerrar('view20')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+            <div class="content">
+                <h1>PRECIOS</h1>
+                <p>Vaso (800ml)------------------------<span>$55 MXN</span></p>
+                <br>
+                <p>Relleno de vaso (1 vez)------------<span>+$30 MXN</span></p>
+            </div>
+        </div>
+        <div class="ventana" id="view21">
+            <div class="cerrar"> <a href="javascript:cerrar('view21')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+            <div class="content">
+                <h1>PRECIOS</h1>
+                <p>Margarita (Vaso 400ml)-----------------<span>$50 MXN</span></p>
+                <br>
+                <p>Mojito (Vaso 400ml)---------------------<span>$55 MXN</span></p>
+                <br>
+                <p>Piña Colada (Vaso 400ml)---------------<span>$70 MXN</span></p>
+                <br>
+                <p>Negroni (Vaso 400ml)-------------------<span>$65 MXN</span></p>
+                <br>
+                <p>Manhattan (Vaso 400ml)----------------<span>$75 MXN</span></p>
+                <br>
+                <p>Especial de la casa (Vaso 450ml)-------<span>$85 MXN</span></p>
+            </div>
+        </div>
+        <div class="ventana" id="view22">
+            <div class="cerrar"> <a href="javascript:cerrar('view22')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+            <div class="content">
+                <h1>PRECIOS</h1>
+                <p>Vaso (600ml)-----------------------<span>$28 MXN</span></p>
+                <br>
+                <p>2 Vasos (1.2L)----------------------<span>$50 MXN</span></p>
+            </div>
+        </div>
+        <div class="ventana" id="view23">
+            <div class="cerrar"> <a href="javascript:cerrar('view23')"><img src="img/cerrar.png" alt="cerrar" width="20px"></a></div>
+            <div class="content">
+                <h1>PRECIOS</h1>
+                <p>Lata (355ml)------------------------<span>$20 MXN</span></p>
+                <br>
+                <p>Botella (600ml)---------------------<span>$32 MXN</span></p>
+            </div>
+        </div>
+                                                                               
+    </div>
+    
+    <footer>
+        <div class="top">
+           <div class="horario">
+            <p>Nuestro Horario
+                <br>Martes a Domingo
+                <br>9:00 a 19:00
+            </p>
+        </div>
+        <div class="contacto">
+            <ul>
+                <li>Correo: lumbres_y_sazon@yopmail.com</li>
+                <li>Numero de telefono: 55585551402</li>
+                <li>Facebook: htttps://facebook.LumbreYsazon.com</li>
+            </ul>
+        </div>
+        </div>
+        <div class="datos">
+            <p>©2024 DISEÑADO POR FLORES ANGEL | </p> 
+        </div>
+    </footer>
+
+    <script>
+
+        function abrir(id){
+            //Elimina ventanas abiertas previamente
+            const ventanas = document.getElementsByClassName("ventana");
+            for (let i = 0; i < ventanas.length; i++) {
+                ventanas[i].style.display = "none";
+            }
+            // Abrir la ventana seleccionada
+            document.getElementById(id).style.display = "block";
+        };
+
+        function cerrar(id){
+            document.getElementById(id).style.display="none"
+        };
+
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if($(this).scrollTop() > 180){
+                    $('header').addClass('header2');
+                }else{
+                    $('header').removeClass('header2');
+                }
+            });
+        });
+
+    </script>
+
+</body>
+</html>
